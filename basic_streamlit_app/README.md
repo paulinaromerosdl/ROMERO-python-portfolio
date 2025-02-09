@@ -2,6 +2,7 @@ The Streamlit app is a coding framework that simplifies learning models and Pyth
 
 Instructions on how to run the app: 
 1. Install Streamlit
-2. To install Streamlit use pip:
-'''bash
+2. To install Streamlit use:
 pip install streamlit
+3. The run app by using command:
+streamlit run basic_streamlit_app/main.py
