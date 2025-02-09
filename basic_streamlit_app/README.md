@@ -1,1 +1,1 @@
-
+The Streamlit app is a coding framework that simplifies learning models and Python projects without using web coding languages. Developers can create interactive web applications with ease and minimal effort.  
