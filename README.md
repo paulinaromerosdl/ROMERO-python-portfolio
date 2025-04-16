@@ -7,5 +7,8 @@ This is a collection of upcoming Python projects showcasing skills in data analy
 
 ⚙️- Tidy Data Project: The aim for this project is to be able to analyze a dataset that contains information about sports and gender-based medal counts through the use of Tidy Data Principles. These principles help format the data, and clean null values to make the data more readable.
 
-📎 [Take a look here!](https://github.com/paulinaromerosdl/ROMERO-python-portfolio/tree/main/TidyData-Project\)
+📎 [Take a look here!](TidyData-Project)
 
+📖 NER App Project: This app uses a Custom Named Entity Recognition (NER) tool built using spaCy and its EntityRuler component. It allows users to input or upload text and define a custom entity patterns, and visualize recognized entities in real-time. This project has been the most challenging out of the three, it has incorporated skills from all projects.
+
+📎 [Take a look here!](NERStreamlitApp)
