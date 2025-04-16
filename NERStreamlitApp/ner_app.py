@@ -35,3 +35,15 @@ if custom_patterns_text:
             custom_patterns.append(json.loads(line))
     except json.JSONDecodeError:
         st.error("⚠️ One or more lines are not valid JSON. Please check the format.")
+#Processing the Text
+if st.button("🔍 Analyze Text"):
+    if not user_text.strip():
+        st.warning("Please enter or upload some text!")
+else:
+    nlp = spacy.load("en_core_web_sm")
+    if "entity_ruler" in nlp.pipe_names:
+        nlp.remove_pipe("entity_ruler")
+
+ruler = nlp.add_pipe("entity_ruler", before="ner")
+if custom_patterns:
+    ruler.add_patterns(custom_patterns)
