@@ -57,3 +57,7 @@ if doc.ents:
         st.markdown(f"- **{ent.text}** — `{ent.label_}`")
 else:
     st.info("No entities found.")
+#Visualizing the entities
+st.markdown("### 🔎 Entity Visualization")
+html = displacy.render(doc, style="ent", jupyter=False)
+st.components.v1.html(html, scrolling=True, height=300)
