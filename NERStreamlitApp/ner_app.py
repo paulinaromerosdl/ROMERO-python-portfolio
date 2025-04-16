@@ -44,6 +44,16 @@ else:
     if "entity_ruler" in nlp.pipe_names:
         nlp.remove_pipe("entity_ruler")
 
+        doc = nlp(user_text)
+
 ruler = nlp.add_pipe("entity_ruler", before="ner")
 if custom_patterns:
     ruler.add_patterns(custom_patterns)
+#Display the entites
+st.markdown("### 🏷️ Detected Entities")
+doc = nlp(user_text)
+if doc.ents:
+    for ent in doc.ents:
+        st.markdown(f"- **{ent.text}** — `{ent.label_}`")
+else:
+    st.info("No entities found.")
