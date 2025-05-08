@@ -60,3 +60,10 @@ if 'df' in locals():
                 return "You prefer routine and familiarity, practical thinking, and may be skeptical of new ideas or abstract concepts."
             else:
                 return "You are moderately open: you enjoy new experiences but still value tradition and practical approaches."
+        elif trait == 'Conscientiousness':
+            if score > 70:
+                return "You are very organized, disciplined, and goal-oriented. You likely plan ahead and value reliability."
+            elif score < 30: 
+                return "You may act more spontaneously and struggle with organization or long-term planning, preferring flexibility."
+            else:
+                return "You show a balanced approach to discipline: you can be organized but also adaptable when needed."
