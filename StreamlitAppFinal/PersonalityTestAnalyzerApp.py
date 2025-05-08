@@ -51,3 +51,12 @@ if 'df' in locals():
     ax.set_ylim(0,100)
     ax.set_title("Your Big Five Personality Profile")
     st.pyplot(fig)
+    #Interpreting the data 
+    def interpret_trait(trait,score):
+        if trait == 'Openness':
+            if score > 70:
+                return "You are highly open to new experiences, enjoy abstract thinking, creativity, and value art and imagination."
+            elif score < 30: 
+                return "You prefer routine and familiarity, practical thinking, and may be skeptical of new ideas or abstract concepts."
+            else:
+                return "You are moderately open: you enjoy new experiences but still value tradition and practical approaches."
