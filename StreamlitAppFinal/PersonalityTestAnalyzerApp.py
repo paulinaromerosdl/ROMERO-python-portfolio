@@ -81,5 +81,13 @@ if 'df' in locals():
                 return "You may be more skeptical of others’ intentions and prioritize personal goals over social harmony."
             else:
                 return "You strike a balance: you are friendly and cooperative, but can assert yourself when needed."
+        elif trait == 'Neuroticism':
+            if score > 70: 
+                return "You may be more emotionally reactive and prone to stress, anxiety, or mood swings. You may often worry or feel overwhelmed."
+            elif score < 30: 
+                return "You tend to be emotionally stable, calm, and resilient under pressure. You likely handle stress well."
+            else: 
+              return "You have a moderate level of emotional reactivity: sometimes affected by stress but generally composed."   
+
             
 
