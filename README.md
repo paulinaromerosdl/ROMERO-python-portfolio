@@ -1,3 +1,4 @@
+# 👁️‍🗨️ AT A GLANCE
 This is a collection of upcoming Python projects showcasing skills in data analysis, visualization, and software development. This portfolio includes will include interactive dashboards, data storytelling, time series analysis, and advanced data structures like arrays, stacks, and trees. Each project highlights practical applications of Python in handling, transforming, and visualizing data. Hopefully, I will be able to develop both soft and technical skills, and expand my understanding of other programming languages including python.
 
 ## Here are projects for the semester:
