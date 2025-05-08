@@ -44,7 +44,7 @@ elif input_method == "Upload CSV":
 
 #Setting up visualiztions for data frames
 if 'df' in locals():
-    st.subheader("📊 Trait Visualization ")
+    st.subheader("📊 Trait Visualization & Interpretation")
     #Plotting the data 
     fig, ax = plt.subplots()
     sns.barplot(x='Trait', y='Score', data=df, palette='coolwarm')
