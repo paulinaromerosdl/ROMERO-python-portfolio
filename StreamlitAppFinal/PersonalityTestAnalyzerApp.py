@@ -88,6 +88,12 @@ if 'df' in locals():
                 return "You tend to be emotionally stable, calm, and resilient under pressure. You likely handle stress well."
             else: 
               return "You have a moderate level of emotional reactivity: sometimes affected by stress but generally composed."   
+    #Loop through each trait 
+    for i, row in df.iterrows():
+        trait = row['Trait']
+        score = row['Score']
+        st.markdown(f"### {trait} ({score})")
+        st.write(interpret_trait(trait, score))
 
             
 
