@@ -7,8 +7,10 @@ import matplotlib.pyplot as plt
 # App Title and description
 st.title("🧠 Big Five Personality Test Analyzer")
 st.markdown("This app is dedicated to analyze your results from the Big Five Personality Test invented by Ernest Tupes and Raymond Christal. Upload your results in a csv file or input the data manually below!")
+
 #Let user choose an input method of data 
 input_method = st.radio("Choose input method:",["Manual Input", "Upload CSV"] )
+
 #Setting slider options for manual input
 if input_method == "Manual Input":
     st.subheader("🔧 Enter Your Scores (0-100)")
@@ -40,3 +42,12 @@ elif input_method == "Upload CSV":
         except Exception as e:
             st.error(f"Error: {e}")
 
+#Setting up visualiztions for data frames
+if 'df' in locals():
+    st.subheader("📊 Trait Visualization")
+    #Plotting the data 
+    fig, ax = plt.subplots()
+    sns.barplot(x='Trait', y='Score', data=df, palette='coolwarm')
+    ax.set_ylim(0,100)
+    ax.set_title("Your Big Five Personality Profile")
+    st.pyplot(fig)
