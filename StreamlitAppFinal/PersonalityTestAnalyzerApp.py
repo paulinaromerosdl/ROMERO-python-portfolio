@@ -74,4 +74,12 @@ if 'df' in locals():
                 return "You are introverted and may prefer solitude or small, quiet settings. You tend to reflect inwardly and enjoy calm environments."
             else:
                 return "You are an ambivert: comfortable in social settings but also value your alone time."
+        elif trait == 'Agreeableness':
+            if score > 70: 
+                return "You are very compassionate, cooperative, and trusting. You value getting along with others and often avoid conflict."
+            elif score < 30: 
+                return "You may be more skeptical of others’ intentions and prioritize personal goals over social harmony."
+            else:
+                return "You strike a balance: you are friendly and cooperative, but can assert yourself when needed."
+            
 
