@@ -28,7 +28,7 @@ if input_method == "Manual Input":
         'Score': [openness, conscientiousness, extraversion, agreeableness, neuroticism]
     })
 
-    st.write("### Your Personality Scores")
+    st.write("### 📈 Your Personality Scores")
     st.dataframe(df)
 #Set up for a CSV file
 elif input_method == "Upload CSV":
@@ -44,7 +44,7 @@ elif input_method == "Upload CSV":
 
 #Setting up visualiztions for data frames
 if 'df' in locals():
-    st.subheader("📊 Trait Visualization")
+    st.subheader("📊 Trait Visualization ")
     #Plotting the data 
     fig, ax = plt.subplots()
     sns.barplot(x='Trait', y='Score', data=df, palette='coolwarm')
