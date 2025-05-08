@@ -67,3 +67,11 @@ if 'df' in locals():
                 return "You may act more spontaneously and struggle with organization or long-term planning, preferring flexibility."
             else:
                 return "You show a balanced approach to discipline: you can be organized but also adaptable when needed."
+        elif trait == 'Extraversion':
+            if score > 70:
+                return "You are highly outgoing, energetic, and enjoy being around people. You likely draw energy from social interactions."
+            elif score < 30:
+                return "You are introverted and may prefer solitude or small, quiet settings. You tend to reflect inwardly and enjoy calm environments."
+            else:
+                return "You are an ambivert: comfortable in social settings but also value your alone time."
+
