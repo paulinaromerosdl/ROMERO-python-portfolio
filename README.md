@@ -15,4 +15,6 @@ This is a collection of upcoming Python projects showcasing skills in data analy
 
 🧠 Big Five Personality Test Results Analyzer: This app is designed to analyze the results of your Big Five Personality Test created by Ernest Tupes and Raymond Christal. It gives you detailed interpretation and visualization of the results.
 
+📎 [Take a look here!](https://github.com/paulinaromerosdl/ROMERO-python-portfolio/tree/main/StreamlitAppFinal) 
+
 
